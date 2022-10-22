@@ -75,8 +75,8 @@ img{
     position: relative;
     float: right;
     width: auto;
-    height: 49px;
-    margin: 17px 0 0 0;
+    height: auto;
+    margin:0;
     text-align: right;
     background: #E7F4E1;
     border-radius: 24px;
@@ -142,13 +142,13 @@ a {
 .boxlyout {
     display: grid;
     grid-template-columns: 504px 249px 249px 400px;
-    grid-template-rows: 249px 280px 200px;
+    grid-template-rows: 249px 249px 200px;
     grid-column-gap: 33px;
+    grid-row-gap: 10px;
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    padding: auto;
-    margin:13px 0 100px 0;
+    margin:13px 0;
     color: #DBFDF1;
     background:  #DBFDF1;
     overflow:visible;
@@ -157,7 +157,6 @@ a {
 .boxlyout a:link{ text-decoration:none;}
 .boxlyout a:visited{ color:#999999; }
 .boxlyout a:active{color:black; }
-
 .challenge_panel{
     width: 504px;
     height: 504px;
@@ -233,28 +232,20 @@ h3{
     margin:0;
     
 }
-.recipe2 .image{
-    background-size: cover;
-    display: inline-block;
-    grid-column-start: 2;
-    margin: 13px 0 0 0px;
-    width: 400px;
+.recipe2{
+    width: 532px; 
     height: 249px;
     border-radius: 18px;
+    background: url(../images/pizza.jpg) 50% 50% no-repeat;
+    grid-column-start: 2;
 }
 .recipe2 .text {
-    display: inline-block;
-    flex-flow: row wrap;
-    align-items: flex-end;
-    align-content: flex-end;
-    grid-row-start:initial;
-    padding: 0;
+    margin: 160px 20px;
     box-sizing: border-box;
     font-family: 'Squada One',sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    text-align:left;
+    font-weight: 500;
+    text-align: left;
     color: #fff;
 }
 .recipe2 .text p {
@@ -343,4 +334,111 @@ footer{
     padding: 0 4em 0 4em;
     margin: 3em auto 0 auto;
     color: #000000;
+}
+@media only screen and (max-width: 768px){
+    img{
+        width: 75px;
+        height: 64px;
+        background-size: contain;
+    }
+    .boxlyout{
+        display: grid;
+        grid-template-columns: 384px 185px 185px;
+        grid-template-rows: 180px 192px 180px;
+        column-gap: 10px;
+    }
+    .challenge_panel{
+        width: 384px;
+        height: 384px;
+    }
+
+    .recipe_colection{
+        width: 180px;
+        height: 180px
+    }  
+    
+    .whyvegan{
+        width: 172px;
+        height: 180px;
+    }
+    .recipe1{
+        width: 365px; 
+        height: 192px;
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+    .recipe2{
+        width: 384px; 
+        height: 192px;
+        margin-right: 10px;
+        grid-column-start: 1;
+    }
+    .recipe_colection .text {
+        margin: 138px 0px;
+    }
+    .whyvegan .text {
+        margin: 118px 1px;
+    }
+    .recipe1 .text {
+        margin: 100px 20px;
+    }
+    .recipe2 .text {
+        margin: 85px 15px;
+    }
+}
+@media only screen and (max-width: 375px){
+    img{
+        width: 75px;
+        height: 64px;
+        background-size: contain;
+    }
+    .boxlyout{
+        display: grid;
+        grid-template-columns:185px 185px;
+        grid-template-rows: 187px 187px 187px 187px 187px;
+        column-gap: 10px;
+    }
+    .challenge_panel{
+        width: 375px;
+        height: 375px;
+    }
+
+    .recipe_colection{
+        width: 187px;
+        height: 187px
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }  
+    
+    .whyvegan{
+        width: 187px;
+        height: 187px;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    .recipe1{
+        width: 375px; 
+        height: 187px;
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    .recipe2{
+        width: 384px; 
+        height: 192px;
+        margin-right: 10px;
+        grid-column-start: 1;
+        grid-row-start: 5;
+    }
+    .recipe_colection .text {
+        margin: 138px 0px;
+    }
+    .whyvegan .text {
+        margin: 118px 1px;
+    }
+    .recipe1 .text {
+        margin: 100px 20px;
+    }
+    .recipe2 .text {
+        margin: 85px 15px;
+    }
 }
