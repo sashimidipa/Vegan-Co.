@@ -28,40 +28,45 @@
                 <a class="navbar-brand" href="index.html">
                     <img src="./images/veganco-icon.png" alt="">
                 </a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">DESAFIO DE 30 DIAS
-                        <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="./paginas/chalenge.html" class="parent">Desafio vegano de 30 dias</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">COMIDA
-                        <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="./paginas/recipes.html">Recetas</a></li>
-                            <li><a href="./paginas/foodplan.html">Planificacion de comidas</a></li>
-                            <li><a href="./paginas/sust.html">Sustitutos de alimentos</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">DESCUBRIR
-                        <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="./paginas/aboutus.html">Acerca de Vegan'Co.</a></li>
-                            <li><a href="./paginas/whyvegan.html">Porque hacerse vegano</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">RECURSOS
-                        <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="./paginas/contact.html">Contacto</a></li>
-                            <li><a href="./index.html">Volver al inicio</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse show" id="navbarNavDropdown" style>
+                    <ul class="navbar-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">DESAFIO DE 30 DIAS
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./paginas/chalenge.html" class="parent">Desafio vegano de 30 dias</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">COMIDA
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./paginas/recipes.html">Recetas</a></li>
+                                <li><a href="./paginas/foodplan.html">Planificacion de comidas</a></li>
+                                <li><a href="./paginas/sust.html">Sustitutos de alimentos</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">DESCUBRIR
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./paginas/aboutus.html">Acerca de Vegan'Co.</a></li>
+                                <li><a href="./paginas/whyvegan.html">Porque hacerse vegano</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">RECURSOS
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./paginas/contact.html">Contacto</a></li>
+                                <li><a href="./index.html">Volver al inicio</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
                 <div class="rightbox">
                     <form id="search_form" action="" method="get">
                         <input type="text" class="input_text" value="" title="Buescar..." placeholder="Buscar...">
@@ -82,28 +87,25 @@
     </header>
     <main id="home">
         <div class="boxlyout">
-            <a href="./paginas/chalenge.html">
-                <img class= "challenge_panel" src="./CSS/images/Asume el desafio (1).png" alt="">
+            <a class="challenge_panel" href="./paginas/chalenge.html">
             </a>
             <a class="recipe_colection" href="./paginas/recipes.html">
-                <div class="image" style="background:url(./CSS/images/hamburguesamenu.jpg) 50% 50% no-repeat"></div>
                 <div class="text">
-                    <h3>LISTA DE RECETAS</h3>
+                    <h2>LISTA DE RECETAS</h2>
                 </div>
             </a>
             <a class="whyvegan" href="./paginas/whyvegan.html">
-                <div class="image" style="background:url(./CSS/images/Whyveg.jpg)"></div>
                 <div class="text">
-                    <h3>
-                        PROQUE HACERSE <br> VEGANO
-                    </h3>
+                    <h2>
+                        PROQUE HACERSE VEGANO
+                    </h2>
                 </div>
             </a>
             <a class="recipe1" href="">
                 <div class="image" style="background:url(./CSS/images/crumble-de-manzana-1.jpg)"></div>
                 <div class="text">
                     <p>RECETA</p>
-                    <h3>Crumble de manzana</h3>
+                    <h2>Crumble de manzana</h2>
                 </div>
             </a>
             <a class="recipe2" href="">

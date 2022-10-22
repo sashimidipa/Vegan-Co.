@@ -7,6 +7,10 @@ body {
     letter-spacing: .025em;
     background: #DBFDF1;
 }
+header{
+    overflow: visible;
+    max-width: 100%;
+}
 .navbar{
     height: 84px;
     width:100%;
@@ -61,6 +65,11 @@ img{
     max-height: 0;
     background-color: #E7F4E1;
 }
+.navbar-nav a:hover{color:black; text-decoration:none; }
+.navbar-nav a:link{ text-decoration:none;}
+.navbar-nav a:visited{ color:#000000; }
+.navbar-nav a:active{color:black; }
+
 .rightbox {
     display: block;
     position: relative;
@@ -132,90 +141,71 @@ a {
 }
 .boxlyout {
     display: grid;
-    grid-template-columns: 504px 249px 249px 300px;
+    grid-template-columns: 504px 249px 249px 400px;
     grid-template-rows: 249px 280px 200px;
     grid-column-gap: 33px;
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
     padding: auto;
-    margin:100px 0 100px 0;
+    margin:13px 0 100px 0;
     color: #DBFDF1;
     background:  #DBFDF1;
     overflow:visible;
 }
+.boxlyout a:hover{ font-weight:bold; background-color:black; color:white; text-decoration:none; }
+.boxlyout a:link{ text-decoration:none;}
+.boxlyout a:visited{ color:#999999; }
+.boxlyout a:active{color:black; }
+
 .challenge_panel{
-    margin: 13px 0 0 0;
     width: 504px;
     height: 504px;
     border-radius: 18px;
+    background:url(../images/asume-el-esafio.png)
 }
-.recipe_colection .image{
-    background-size: cover !important;
-    display: inline-block;
-    margin: 13px 0;
+.recipe_colection{
     width: 249px;
     height: 249px;
     border-radius: 18px;
+    background: url(../images/hamburguesamenu.jpg) 50% 50% no-repeat;
 }
 .recipe_colection .text {
-    display: inline-block;
-    flex-flow: row wrap;
-    align-items: flex-end;
-    align-content: flex-end;
-    grid-row-start:initial;
-    padding: 0;
+    margin: 200px 0px;
     box-sizing: border-box;
     font-family: 'Squada One',sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    text-align: center;
     color: #fff;
+    text-align: center;
 }
-.whyvegan .image{
-    background-size: cover !important;
-    display: inline-block;
-    margin: 13px 0px;
+.whyvegan{
     width: 249px;
     height: 249px;
     border-radius: 18px;
+    background: url(../images/whyveg.jpg) 50% 50% no-repeat;
 }
 .whyvegan .text {
-    display: inline-block;
-    flex-flow: row wrap;
-    align-items: flex-end;
-    align-content: flex-end;
-    grid-row-start:initial;
-    padding: 0;
+    margin: 170px 20px;
     box-sizing: border-box;
     font-family: 'Squada One',sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
     text-align: center;
     color: #fff;
 }
-.recipe1 .image{
-    background-size: cover !important;
-    display: inline-block;
-    margin: 13px 0px;
-    width: 300px;
+.recipe1{
+    width: 350px; 
     height: 249px;
     border-radius: 18px;
+    background: url(../images/crumble-de-manzana.jpg) 50% 50% no-repeat;
 }
 .recipe1 .text {
-    display: inline-block;
-    flex-flow: row wrap;
-    align-items: flex-end;
-    align-content: flex-end;
-    grid-row-start:initial;
-    padding: 0;
+    margin: 160px 20px;
     box-sizing: border-box;
     font-family: 'Squada One',sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
+    font-weight: 500;
     text-align: left;
     color: #fff;
 }
