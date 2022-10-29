@@ -194,7 +194,7 @@ a {
     color: #fff;
 }
 .recipe1{
-    width: 350px; 
+    width: 400px; 
     height: 249px;
     border-radius: 18px;
     background: url(../images/crumble-de-manzana.jpg) 50% 50% no-repeat;
@@ -335,6 +335,49 @@ footer{
     margin: 3em auto 0 auto;
     color: #000000;
 }
+.text_box_chalenge{
+    display: grid;
+    grid-template-columns: 720px 720px;
+    justify-items: center;
+    height: 816px;
+    max-width: 100%;
+    padding: 100px  43px;
+    margin: 0px auto 0 auto;
+    box-sizing: border-box;
+    background: #21832A
+}
+.chalenge_singup{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    vertical-align: top;
+    overflow: hidden;
+    width: 421px;
+    height: 379px;
+    padding: 3em 3.5em 3.5em 3.5em;
+    background: #306441;
+    box-sizing: border-box;
+    border-radius: 0.2em;
+    text-align: center;
+}
+.input_text_chalenge{
+    width: 100%;
+    padding: 0.7rem 1rem;
+    font-size: 1.6em;
+    line-height: 1em;
+    box-sizing: border-box;
+}
+.text_box_guidelines{
+    grid-column-start: 2;
+    width: 430px;
+    height: 362px;
+    font-family: 'Nunito Sans';
+    font-style:normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: left;
+    color: #FFFFFF;
+}
 @media only screen and (max-width: 768px){
     img{
         width: 75px;
@@ -402,14 +445,12 @@ footer{
         width: 375px;
         height: 375px;
     }
-
     .recipe_colection{
         width: 187px;
         height: 187px
         grid-column-start: 1;
         grid-row-start: 3;
     }  
-    
     .whyvegan{
         width: 187px;
         height: 187px;
