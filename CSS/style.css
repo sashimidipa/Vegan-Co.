@@ -357,14 +357,40 @@ footer{
     background: #306441;
     box-sizing: border-box;
     border-radius: 0.2em;
-    text-align: center;
 }
 .input_text_chalenge{
     width: 100%;
+    margin-bottom: 22px;
     padding: 0.7rem 1rem;
     font-size: 1.6em;
     line-height: 1em;
+    background-color: #4D8052;
     box-sizing: border-box;
+    border: none;
+    box-shadow: none;
+}
+.input_text_chalenge::placeholder{
+    color: #B7D295;
+}
+.acceptterms {
+    font-size: 20px;
+    color: #B7D295;
+}
+.sumbit{
+    display: ;
+    width: 132px;
+    height: 43px;
+    margin: 20px 100px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #0A5C13;
+    background-color: #B7D295;
+    border-radius: 18px;
+    border: none;
 }
 .text_box_guidelines{
     grid-column-start: 2;
@@ -377,6 +403,18 @@ footer{
     line-height: 44px;
     text-align: left;
     color: #FFFFFF;
+}
+.content_panel{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    width: 1000px;
+    max-width: 100%;
+    padding: 0 4em 0 4em;
+    margin: 3em auto;
+    color: #000000;
 }
 @media only screen and (max-width: 768px){
     img{
