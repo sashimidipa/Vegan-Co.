@@ -1,0 +1,582 @@
+body {
+  margin: 0;
+  color: #333;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.6em;
+  letter-spacing: 0.025em;
+  background: #DBFDF1;
+}
+
+header {
+  overflow: visible;
+  max-width: 100%;
+}
+
+.navbar {
+  height: 84px;
+  width: 100%;
+  max-width: 100%;
+  background-color: #E7F4E1;
+}
+
+img {
+  width: 95px;
+  height: 84px;
+  background-size: contain;
+}
+
+.navbar-nav {
+  overflow: visible;
+  vertical-align: top;
+  width: 550px;
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  font-size: 20px;
+  background: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: normal;
+  color: #000000;
+  background-color: #E7F4E1;
+}
+.navbar-nav a:hover {
+  color: black;
+  text-decoration: none;
+}
+.navbar-nav a:link {
+  text-decoration: none;
+}
+.navbar-nav a:visited {
+  color: #000000;
+}
+.navbar-nav a:active {
+  color: black;
+}
+
+.dropdown li {
+  width: 200px;
+  color: #000000;
+  background-color: #E7F4E1;
+}
+
+.dopdown-toggle {
+  display: block;
+  margin: 0;
+  padding: 15px 30px 5px 22px;
+  -webkit-text-decoration-color: #000000;
+          text-decoration-color: #000000;
+  font-size: 18px;
+  line-height: 1em;
+  font-weight: normal;
+  text-transform: uppercase;
+  background: none;
+  text-decoration: none;
+  background-color: #E7F4E1;
+}
+
+.dopdown-menu {
+  position: relative;
+  display: none;
+  list-style-type: none;
+  margin: 1.2em 0 0 0;
+  padding: 0;
+  white-space: normal;
+  height: auto;
+  max-height: 0;
+  background-color: #E7F4E1;
+}
+
+.rightbox {
+  display: block;
+  position: relative;
+  float: right;
+  width: auto;
+  height: auto;
+  margin: 0;
+  text-align: right;
+  background: #E7F4E1;
+  border-radius: 24px;
+}
+
+#search_form {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 41px;
+  text-align: left;
+  background-color: #D9D9D9;
+  border-radius: 24px;
+}
+
+.input_text {
+  position: relative;
+  width: 200px;
+  padding: 3px 0px 3px 50px;
+  border: none;
+  box-shadow: none;
+  border-radius: 24px;
+  background: #D9D9D9;
+  font-family: "Inria Serif", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.imput_sumbit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 17px;
+  padding: 3px 5px 0 0;
+  background: #D9D9D9;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.material-icons {
+  color: rgb(102, 102, 102);
+  padding: 6px 5px 6px 0px;
+}
+
+.chalenge {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 2.2em;
+  padding: 0.6em 1.2em;
+  font-size: 20px;
+  line-height: 17px;
+  font-family: "Mulish", sans-serif;
+  text-align: left;
+  color: #fff;
+  background: #04a075;
+  border-radius: 24px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: inherit;
+  word-break: break-all;
+}
+
+.boxlyout {
+  display: grid;
+  grid-template-columns: 504px 249px 249px 400px;
+  grid-template-rows: 249px 249px 200px;
+  grid-column-gap: 33px;
+  grid-row-gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  margin: 13px 0;
+  color: #DBFDF1;
+  background: #DBFDF1;
+  overflow: visible;
+}
+.boxlyout a:hover {
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+.boxlyout a:link {
+  text-decoration: none;
+}
+.boxlyout a:visited {
+  color: #999999;
+}
+.boxlyout a:active {
+  color: black;
+}
+
+.challenge_panel {
+  width: 504px;
+  height: 504px;
+  border-radius: 18px;
+  background: url(../images/asume-el-esafio.png);
+}
+
+.recipe_colection {
+  width: 249px;
+  height: 249px;
+  border-radius: 18px;
+  background: url(../images/hamburguesamenu.jpg) 50% 50% no-repeat;
+}
+.recipe_colection .text {
+  margin: 200px 0px;
+  box-sizing: border-box;
+  font-family: "Squada One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+
+.whyvegan {
+  width: 249px;
+  height: 249px;
+  border-radius: 18px;
+  background: url(../images/whyveg.jpg) 50% 50% no-repeat;
+}
+.whyvegan .text {
+  margin: 170px 20px;
+  box-sizing: border-box;
+  font-family: "Squada One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+}
+
+.recipe1 {
+  width: 400px;
+  height: 249px;
+  border-radius: 18px;
+  background: url(../images/crumble-de-manzana.jpg) 50% 50% no-repeat;
+}
+.recipe1 .text {
+  margin: 160px 20px;
+  box-sizing: border-box;
+  font-family: "Squada One", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-align: left;
+  color: #fff;
+}
+.recipe1 .text p {
+  display: inline-block;
+  width: auto;
+  padding: 0.5em 0.7em;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1em;
+  font-family: "Squada One", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(247, 133, 70, 0.75);
+  border-radius: 0.3em;
+}
+.recipe1 .text h3 {
+  margin: 10px 5px 10px;
+  padding: 0 0 0px 0;
+}
+
+h3 {
+  display: flex;
+  margin: 0;
+}
+
+.recipe2 {
+  width: 532px;
+  height: 249px;
+  border-radius: 18px;
+  background: url(../images/pizza.jpg) 50% 50% no-repeat;
+  grid-column-start: 2;
+}
+.recipe2 .text {
+  margin: 160px 20px;
+  box-sizing: border-box;
+  font-family: "Squada One", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-align: left;
+  color: #fff;
+}
+.recipe2 .text p {
+  display: inline-block;
+  width: auto;
+  padding: 0.5em 0.7em;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1em;
+  font-family: "Squada One", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(247, 133, 70, 0.75);
+  border-radius: 0.3em;
+}
+
+footer {
+  width: 100%;
+  max-width: 100%;
+  height: 84px;
+  background: #E7F4E1;
+  font-size: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+.styles.introduction {
+  display: grid;
+  grid-template-columns: 1440px;
+  grid-template-rows: 254px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #E7F4E1;
+}
+
+.text_box {
+  display: block;
+  height: 254px;
+  max-width: 100%;
+  padding: 100px 43px;
+  margin: 0px auto 0 auto;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 65px;
+  text-align: center;
+  color: #0A5C13;
+  box-sizing: border-box;
+  background: #E7F4E1;
+}
+
+.about__us {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  width: 1000px;
+  max-width: 100%;
+  padding: 0 4em 0 4em;
+  margin: 3em auto 0 auto;
+  color: #000000;
+}
+
+.plan {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  width: 1000px;
+  max-width: 100%;
+  padding: 0 4em 0 4em;
+  margin: 3em auto 0 auto;
+  color: #000000;
+}
+
+.sust {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  width: 1000px;
+  max-width: 100%;
+  padding: 0 4em 0 4em;
+  margin: 3em auto 0 auto;
+  color: #000000;
+}
+
+.text_box_chalenge {
+  display: grid;
+  grid-template-columns: 720px 720px;
+  justify-items: center;
+  height: 816px;
+  max-width: 100%;
+  padding: 100px 43px;
+  margin: 0px auto 0 auto;
+  box-sizing: border-box;
+  background: #21832A;
+}
+
+.chalenge_singup {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  vertical-align: top;
+  overflow: hidden;
+  width: 421px;
+  height: 379px;
+  padding: 3em 3.5em 3.5em 3.5em;
+  background: #306441;
+  box-sizing: border-box;
+  border-radius: 0.2em;
+}
+
+.input_text_chalenge {
+  width: 100%;
+  margin-bottom: 22px;
+  padding: 0.7rem 1rem;
+  font-size: 1.6em;
+  line-height: 1em;
+  background-color: #4D8052;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: none;
+}
+.input_text_chalenge::-moz-placeholder {
+  color: #B7D295;
+}
+.input_text_chalenge:-ms-input-placeholder {
+  color: #B7D295;
+}
+.input_text_chalenge::placeholder {
+  color: #B7D295;
+}
+
+.acceptterms {
+  font-size: 20px;
+  color: #B7D295;
+}
+
+.sumbit {
+  width: 132px;
+  height: 43px;
+  margin: 20px 100px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #0A5C13;
+  background-color: #B7D295;
+  border-radius: 18px;
+  border: none;
+}
+
+.text_box_guidelines {
+  grid-column-start: 2;
+  width: 430px;
+  height: 362px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.content_panel {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  width: 1000px;
+  max-width: 100%;
+  padding: 0 4em 0 4em;
+  margin: 3em auto;
+  color: #000000;
+}
+
+@media only screen and (max-width: 768px) {
+  img {
+    width: 75px;
+    height: 64px;
+    background-size: contain;
+  }
+  .boxlyout {
+    display: grid;
+    grid-template-columns: 384px 185px 185px;
+    grid-template-rows: 180px 192px 180px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .challenge_panel {
+    width: 384px;
+    height: 384px;
+  }
+  .recipe_colection {
+    width: 180px;
+    height: 180px;
+  }
+  .recipe_colection .text {
+    margin: 138px 0px;
+  }
+  .whyvegan {
+    width: 172px;
+    height: 180px;
+  }
+  .whyvegan .text {
+    margin: 118px 1px;
+  }
+  .recipe1 {
+    width: 365px;
+    height: 192px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  .recipe1 .text {
+    margin: 100px 20px;
+  }
+  .recipe2 {
+    width: 384px;
+    height: 192px;
+    margin-right: 10px;
+    grid-column-start: 1;
+  }
+  .recipe2 .text {
+    margin: 85px 15px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  img {
+    width: 75px;
+    height: 64px;
+    background-size: contain;
+  }
+  .boxlyout {
+    display: grid;
+    grid-template-columns: 185px 185px;
+    grid-template-rows: 187px 187px 187px 187px 187px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .challenge_panel {
+    width: 375px;
+    height: 375px;
+  }
+  .recipe_colection {
+    width: 187px;
+    height: 187px;
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+  .recipe_colection .text {
+    margin: 138px 0px;
+  }
+  .whyvegan {
+    width: 187px;
+    height: 187px;
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+  .whyvegan .text {
+    margin: 118px 1px;
+  }
+  .recipe1 {
+    width: 375px;
+    height: 187px;
+    grid-column-start: 1;
+    grid-row-start: 4;
+  }
+  .recipe1 .text {
+    margin: 100px 20px;
+  }
+  .recipe2 {
+    width: 384px;
+    height: 192px;
+    margin-right: 10px;
+    grid-column-start: 1;
+    grid-row-start: 5;
+  }
+  .recipe2 .text {
+    margin: 85px 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
