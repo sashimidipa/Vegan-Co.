@@ -23,6 +23,8 @@ $background-color_4: #4D8052;
 $background-color_5: #B7D295;
 
 body {
+	width: 100%;
+	max-width: 1200px;
 	margin: 0;
 	color: $color_1;
 	font-size: 12px;
@@ -36,15 +38,14 @@ header {
 	max-width: 100%;
 }
 .navbar {
-	height: 84px;
+	height: 8.4%;
 	width: 100%;
-	max-width: 100%;
+	max-width: 1200;
 	background-color: $background-color_1;
 }
 img {
-	width: 95px;
-	height: 84px;
-	background-size: contain;
+	width: 15%;
+	background-size:100%;
 }
 .navbar-nav {
 	overflow: visible;
@@ -107,7 +108,7 @@ img {
 	background-color: $background-color_1;
 }
 .rightbox {
-	display: block;
+	display: none;
 	position: relative;
 	float: right;
 	width: auto;
@@ -177,12 +178,12 @@ a {
 }
 .boxlyout {
 	display: grid;
-	grid-template-columns: 34%  17% 17% 27%;
-	grid-template-rows: 28% 28% 28%;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 28% 28% 28% 28%;
 	column-gap:1.5%;
-	row-gap: 1%;
+	row-gap: .5%;
 	flex-wrap: wrap;
-	margin: 13px 0;
+	margin:  0 0 150% 0;
 	color: $color_6;
 	background: #DBFDF1;
 	overflow: visible;
@@ -206,21 +207,21 @@ a {
 }
 .challenge_panel {
 	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 1;
-	grid-row-end: 3;
-	border-radius: 18px;
-	background: url(../images/asume-el-esafio.png)100% no-repeat;
-}
-.recipe_colection {
-	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 1;
-	grid-row-end: 2;
+	grid-row-end: 1;
+	border-radius: 18px;
+	background: url(../images/asume-el-esafio.png) no-repeat;
+	background-size: 100%;
+}
+.recipe_colection {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	grid-row-end: 3;
 	border-radius: 18px;
 	background: url(../images/hamburguesamenu.jpg) 100% no-repeat;
 	.text {
-		margin: 200px 0px;
+		margin: 85% 0 0 0;
 		box-sizing: border-box;
 		font-family: $font-family_4;
 		font-style: normal;
@@ -230,14 +231,13 @@ a {
 	}
 }
 .whyvegan {
-	grid-column-start: 3;
-	grid-column-end: 4;
-	grid-row-start: 1;
-	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
 	border-radius: 18px;
 	background: url(../images/whyveg.jpg) 100% no-repeat;
 	.text {
-		margin: 170px 20px;
+		margin: 80% 9% 0 9%;
 		box-sizing: border-box;
 		font-family: $font-family_4;
 		font-style: normal;
@@ -247,14 +247,14 @@ a {
 	}
 }
 .recipe1 {
-	grid-column-start: 4;
-	grid-column-end: 5;
-	grid-row-start: 1;
-	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
 	border-radius: 18px;
 	background: url(../images/crumble-de-manzana.jpg) 100% no-repeat;
 	.text {
-		margin: 160px 20px;
+		margin: 25% 5% 0 5%;
 		box-sizing: border-box;
 		font-family: $font-family_4;
 		font-style: normal;
@@ -287,12 +287,13 @@ h3 {
 	margin: 0;
 }
 .recipe2 {
-	grid-column-start: 2;
-	grid-column-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 4;
 	border-radius: 18px;
 	background: url(../images/pizza.jpg) 100% no-repeat;
 	.text {
-		margin: 160px 20px;
+		margin: 23% 4% 0 8%;
 		box-sizing: border-box;
 		font-family: $font-family_4;
 		font-style: normal;
@@ -317,12 +318,12 @@ h3 {
 	}
 }
 .recipe3 {
-	grid-column-start: 4;
-	grid-column-end: 5;
+	grid-column-start: 1;
+	grid-column-end: 3;
 	border-radius: 18px;
 	background: url(../images/berenjenasrellenas.jpg) 100% no-repeat;
 	.text {
-		margin: 160px 20px;
+		margin: 23% 4% 0 4%;
 		box-sizing: border-box;
 		font-family: $font-family_4;
 		font-style: normal;
