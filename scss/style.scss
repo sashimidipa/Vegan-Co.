@@ -38,13 +38,12 @@ header {
 	max-width: 100%;
 }
 .navbar {
-	height: 8.4%;
 	width: 100%;
 	max-width: 1200;
 	background-color: $background-color_1;
 }
 .navbar-brand {
-	width: 12%;
+	width: 5%;
 }
 img {
 	width: 100%;
@@ -84,6 +83,7 @@ img {
 		width: 200px;
 		color: $color_2;
 		background-color: $background-color_1;
+		transition: color .5s ease, background .5s ease;
 	}
 }
 .dopdown-toggle {
@@ -170,6 +170,7 @@ img {
 	color: $color_5;
 	background: #04a075;
 	border-radius: 24px;
+	transition: filter .1s ease;
 }
 a {
 	color: $color_2;
@@ -353,12 +354,11 @@ h3 {
 footer {
 	width: 100%;
 	max-width: 100%;
-	height: 84px;
 	background: #E7F4E1;
 	font-size: 20px;
 	font-family: $font-family_1;
 	text-align: center;
-	padding: 30px;
+	padding: 3%;
 }
 .styles.introduction {
 	display: grid;
@@ -733,7 +733,7 @@ h1{
 		grid-row-start: 1;
 		grid-row-end: 2;
 		.text {
-			margin: 35% 5% 0 5%;
+			margin: 25% 5% 0 5%;
 		}
 	}
 	.recipe2{
@@ -742,17 +742,16 @@ h1{
 		grid-row-start: 2;
 		grid-row-end: 3;
 		.text {
-			margin: 30% 5% 0 5%;
+			margin: 20% 5% 0 5%;
 		}
 	}
 	.recipe3{
 		grid-column-start: 5;
 		grid-column-end: 6;
 		.text {
-			margin: 30% 5% 0 5%;
+			margin: 20% 5% 0 5%;
 		}
 	}
-	
 	.text_box_chalenge {
 		grid-template-columns: 50% 50%;
 		grid-template-rows: 100%;
