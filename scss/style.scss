@@ -110,9 +110,8 @@ img {
 .rightbox {
 	display: none;
 	position: relative;
-	float: right;
-	width: auto;
-	height: auto;
+	width: 15%;
+	height: 15%;
 	margin: 0;
 	text-align: right;
 	background: #E7F4E1;
@@ -180,7 +179,7 @@ a {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: 50% 28% 28% 28% 28%;
-	column-gap:1.5%;
+	column-gap:.5%;
 	row-gap: .5%;
 	flex-wrap: wrap;
 	margin:  0 0 150% 0;
@@ -220,6 +219,7 @@ a {
 	grid-row-end: 3;
 	border-radius: 18px;
 	background: url(../images/hamburguesamenu.jpg) 100% no-repeat;
+	background-size: 175%;
 	.text {
 		margin: 85% 0 0 0;
 		box-sizing: border-box;
@@ -235,7 +235,8 @@ a {
 	grid-row-start: 2;
 	grid-row-end: 3;
 	border-radius: 18px;
-	background: url(../images/whyveg.jpg) 100% no-repeat;
+	background: url(../images/whyveg.jpg) 50% no-repeat;
+	background-size: 175%;
 	.text {
 		margin: 80% 9% 0 9%;
 		box-sizing: border-box;
@@ -498,4 +499,126 @@ footer {
 	padding: 0 4em 0 4em;
 	margin: 3em auto;
 	color: $color_2;
+}
+@media only screen and (min-width:480px){
+	.boxlyout{
+		grid-template-rows: 25% 30% 30% 30% 30%;
+	}
+	.recipe_colection {
+		.text {
+			margin: 77% 0 0 0;
+		}
+	}
+	.whyvegan {
+		.text {
+			margin: 77% 20% 0 20%;
+		}
+	}
+	.recipe1{
+		background-size: 100%;
+		.text {
+			margin: 30% 5% 0 5%;
+		}
+	}
+	.recipe2{
+		background-size: 100%;
+		.text {
+			margin: 30% 5% 0 5%;
+		}
+	}
+	.recipe3{
+		background-size: 100%;
+		.text {
+			margin: 30% 5% 0 5%;
+		}
+	}
+}
+@media only screen and (min-width:600px){
+	.boxlyout{
+		grid-template-rows: 54% 30% 30% 30% 30%;
+		margin:  0 0 10% 0;
+	}
+	.recipe_colection {
+		.text {
+			margin: 77% 0 0 0;
+		}
+	}
+	.whyvegan {
+		.text {
+			margin: 77% 25% 0 25%;
+		}
+	}
+	.recipe1{
+		.text {
+			margin: 35% 5% 0 5%;
+		}
+	}
+	.recipe2{
+		.text {
+			margin: 35% 5% 0 5%;
+		}
+	}
+	.recipe3{
+		.text {
+			margin: 35% 5% 0 5%;
+		}
+	}
+}
+@media only screen and (min-width:1024px){
+	.rightbox {
+		display: block;
+	}
+	.boxlyout{
+		grid-template-columns: 25% 25% 25% 25%;
+		grid-template-rows: 34.5% 34.5% 34.5% 34.5% 34.5%;
+	}
+	.challenge_panel {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+	.recipe_colection {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		.text {
+			margin: 77% 0 0 0;
+		}
+	}
+	.whyvegan {
+		grid-column-start: 4;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		.text {
+			margin: 70% 10% 0 10%;
+		}
+	}
+	.recipe1{
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		.text {
+			margin: 30% 5% 0 5%;
+		}
+	}
+	.recipe2{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 3;
+		grid-row-end: 4;
+		.text {
+			margin: 30% 5% 0 5%;
+		}
+	}
+	.recipe3{
+		grid-column-start: 3;
+		grid-column-end: 5;
+		.text {
+			margin: 30% 5% 0 5%;
+		}
+	}
 }
