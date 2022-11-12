@@ -15,147 +15,147 @@
         <link rel="stylesheet" href="../scss/style.css">
     </head>
     <body>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <header>
-        <nav class="navbar navbar-expand-lg" aria-label="Fifth navbar example">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../images/veganco-icon.png" alt="">
-                </a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse" id="navbarNavDropdown" style>
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DESAFIO DE 30 DIAS
-                            <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./chalenge.html" class="parent">Desafio vegano de 30 dias</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">COMIDA
-                            <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./recipes.html">Recetas</a></li>
-                                <li><a class="dropdown-item" href="./foodplan.html">Planificacion de comidas</a></li>
-                                <li><a class="dropdown-item" href="./sust.html">Sustitutos de alimentos</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DESCUBRIR
-                            <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./aboutus.html">Acerca de Vegan'Co.</a></li>
-                                <li><a class="dropdown-item" href="./whyvegan.html">Porque hacerse vegano</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">RECURSOS
-                            <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./contact.html">Contacto</a></li>
-                                <li><a class="dropdown-item" href="../index.html">Volver al inicio</a></li>
-                            </ul>
-                        </li>
+        <header>
+            <nav class="navbar navbar-expand-lg" aria-label="Fifth navbar example">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/veganco-icon.png" alt="">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarNavDropdown" style>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DESAFIO DE 30 DIAS
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./chalenge.html" class="parent">Desafio vegano de 30 dias</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">COMIDA
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./recipes.html">Recetas</a></li>
+                                    <li><a class="dropdown-item" href="./foodplan.html">Planificacion de comidas</a></li>
+                                    <li><a class="dropdown-item" href="./sust.html">Sustitutos de alimentos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DESCUBRIR
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./aboutus.html">Acerca de Vegan'Co.</a></li>
+                                    <li><a class="dropdown-item" href="./whyvegan.html">Porque hacerse vegano</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">RECURSOS
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./contact.html">Contacto</a></li>
+                                    <li><a class="dropdown-item" href="../index.html">Volver al inicio</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rightbox">
+                        <form id="search_form" action="" method="get">
+                            <input type="text" class="input_text" value="" title="Buescar..." placeholder="Buscar...">
+                            <button type="submit" class="imput_sumbit">
+                                <i class="material-icons">
+                                    <span class="materal-icons-otlined">
+                                        search
+                                    </span>
+                                </i>    
+                            </button>
+                        </form>
+                        <a href="./chalenge.html" class="chalenge">
+                            Asumir el desafio
+                        </a>    
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="styles_introduction">
+                <div class="text_box">
+                    <h1><datagrid>SUSTITUCION DE ALIMENTOS</datagrid></h1>
+                </div>
+            </div>
+            <div class="sust">
+                <p>
+                    Los huevos se pueden reemplazar en muchos platos, incluidos revueltos, quiches, frittata, tortillas, pasteles, natillas y más.
+                </p>
+            </div>
+            <div class="sust">
+                <h2>Sustitución de huevos en la cocina.</h2>
+                <p>
+                    Así es como se pueden usar diferentes ingredientes en una variedad de métodos de cocción para reemplazar un huevo:
+                    <h3>Horneados</h3>
+                    <ul>
+                        <li>½ plátano maduro triturado = 1 huevo</li>
+                        <li>¼ taza de puré de manzana sin azúcar = 1 huevo</li>
+                        <li>¼ taza puré de calabaza = 1 huevo</li>
+                        <li>¼ taza puré de aguacate = 1 huevo</li>
+                        <li>1 cucharada de semillas de chía + 3 cucharadas de agua (mezclar y dejar reposar durante 15 minutos) = 1 huevo</li>
+                        <li>1 cucharada de semillas de lino molidas + 3 cucharadas de agua (mezclar y dejar reposar durante 15 minutos) = 1 huevo</li>
+                        <li>3 cucharadas de aquafaba = 1 huevo</li>
+                        <li>2 cucharadas de aquafaba = 1 clara de huevo</li>
                     </ul>
-                </div>
-                <div class="rightbox">
-                    <form id="search_form" action="" method="get">
-                        <input type="text" class="input_text" value="" title="Buescar..." placeholder="Buscar...">
-                        <button type="submit" class="imput_sumbit">
-                            <i class="material-icons">
-                                <span class="materal-icons-otlined">
-                                    search
-                                </span>
-                            </i>    
-                        </button>
-                    </form>
-                    <a href="./chalenge.html" class="chalenge">
-                        Asumir el desafio
-                    </a>    
-                </div>
+                    Reemplazos de huevo comprados en la tienda: utilícelos según las indicaciones 3 cucharadas de tofu sedoso en puré = 1 huevo (agregar 1/8 de cucharadita de polvo de hornear le dará un poco de fuerza)
+                    <h3>Revueltos</h3>
+                    <ul>
+                        <li>¼ taza de puré de tofu firme = 1 huevo</li>
+                    </ul>
+                    <h3>En Quiches, Frittata, Omelettes y 'Sunny-side up'</h3>
+                    <ul>
+                        <li>3 cucharadas de tofu sedoso hecho puré = 1 huevo</li>
+                        <li>3 cucharadas de harina de garbanzos + 3 cucharadas de agua = 1 huevo</li>
+                        <li>La sal de Kala namak (sal negra) da un sabor a huevo</li>
+                    </ul>
+                    <h3>En natillas</h3>
+                    <ul>
+                        <li>3 cucharadas de tofu sedoso hecho puré = 1 huevo</li>
+                    </ul>
+                    <h3>En albondigas vegetales/ hamburguezas</h3>
+                    <ul>
+                        <li>3 cucharadas de aquafaba = 1 huevo</li>
+                        <li>¼ taza de puré de papas = 1 huevo</li>
+                        <li>2 cucharadas de almidón de maíz = 1 huevo</li>
+                    </ul>                
+                </p>
+                <h2>Dos buenas razones para reemplazar los huevos</h2>
+                <ol>
+                    <li>
+                        <h3>Salud</h3>
+                        <p>
+                            Los huevos tienen un alto contenido de grasas saturadas y colesterol, los cuales están relacionados con enfermedades del corazón. Tienen cero fibra dietética. Además, comer huevos se ha relacionado con el desarrollo de varios tipos de cáncer. Obtenga más información aquí .
+                            Los huevos pueden transportar bacterias peligrosas como salmonella, campylobacter y listeria (especialmente para las mujeres embarazadas), todas las cuales se sabe que causan enfermedades graves en los humanos. Obtenga más información aquí .
+                            También está el tema de la contaminación debido a que las gallinas son alimentadas con alimentos cargados de pesticidas.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Etica</h3>
+                        <p>
+                            La industria de la puesta de huevos es intrínsecamente cruel. Millones de pollitos machos de un día de edad son triturados completamente conscientes o asfixiados por dióxido de carbono porque no ponen huevos y se consideran redundantes en la industria.
+                            Las gallinas ponedoras son criadas y criadas únicamente para poner huevos para el consumo humano. Se mantienen en condiciones sucias, ya sea en jaulas en batería de alambre desnudo, cobertizos abarrotados ('colocados en granero') o semi-al aire libre (llamados de rango libre).
+                            Las gallinas ponedoras han sido criadas para poner alrededor de 300 huevos por año, en lugar de los 12 o más que alguna vez pusieron sus ancestros aves de la selva.
+                            A pesar de una vida útil de hasta diez años, todas las gallinas (independientemente de cómo se críen) se envían al matadero alrededor de los 18 meses de edad, cuando ya no se consideran 'rentables'.
+                        </p>
+                    </li>
+                </ol>
             </div>
-        </nav>
-    </header>
-    <main>
-        <div class="styles_introduction">
-            <div class="text_box">
-                <h1><datagrid>SUSTITUCION DE ALIMENTOS</datagrid></h1>
-            </div>
-        </div>
-        <div class="sust">
-            <p>
-                Los huevos se pueden reemplazar en muchos platos, incluidos revueltos, quiches, frittata, tortillas, pasteles, natillas y más.
-            </p>
-        </div>
-        <div class="sust">
-            <h2>Sustitución de huevos en la cocina.</h2>
-            <p>
-                Así es como se pueden usar diferentes ingredientes en una variedad de métodos de cocción para reemplazar un huevo:
-                <h3>Horneados</h3>
-                <ul>
-                    <li>½ plátano maduro triturado = 1 huevo</li>
-                    <li>¼ taza de puré de manzana sin azúcar = 1 huevo</li>
-                    <li>¼ taza puré de calabaza = 1 huevo</li>
-                    <li>¼ taza puré de aguacate = 1 huevo</li>
-                    <li>1 cucharada de semillas de chía + 3 cucharadas de agua (mezclar y dejar reposar durante 15 minutos) = 1 huevo</li>
-                    <li>1 cucharada de semillas de lino molidas + 3 cucharadas de agua (mezclar y dejar reposar durante 15 minutos) = 1 huevo</li>
-                    <li>3 cucharadas de aquafaba = 1 huevo</li>
-                    <li>2 cucharadas de aquafaba = 1 clara de huevo</li>
-                </ul>
-                Reemplazos de huevo comprados en la tienda: utilícelos según las indicaciones 3 cucharadas de tofu sedoso en puré = 1 huevo (agregar 1/8 de cucharadita de polvo de hornear le dará un poco de fuerza)
-                <h3>Revueltos</h3>
-                <ul>
-                    <li>¼ taza de puré de tofu firme = 1 huevo</li>
-                </ul>
-                <h3>En Quiches, Frittata, Omelettes y 'Sunny-side up'</h3>
-                <ul>
-                    <li>3 cucharadas de tofu sedoso hecho puré = 1 huevo</li>
-                    <li>3 cucharadas de harina de garbanzos + 3 cucharadas de agua = 1 huevo</li>
-                    <li>La sal de Kala namak (sal negra) da un sabor a huevo</li>
-                </ul>
-                <h3>En natillas</h3>
-                <ul>
-                    <li>3 cucharadas de tofu sedoso hecho puré = 1 huevo</li>
-                </ul>
-                <h3>En albondigas vegetales/ hamburguezas</h3>
-                <ul>
-                    <li>3 cucharadas de aquafaba = 1 huevo</li>
-                    <li>¼ taza de puré de papas = 1 huevo</li>
-                    <li>2 cucharadas de almidón de maíz = 1 huevo</li>
-                </ul>                
-            </p>
-            <h2>Dos buenas razones para reemplazar los huevos</h2>
-            <ol>
-                <li>
-                    <h3>Salud</h3>
-                    <p>
-                        Los huevos tienen un alto contenido de grasas saturadas y colesterol, los cuales están relacionados con enfermedades del corazón. Tienen cero fibra dietética. Además, comer huevos se ha relacionado con el desarrollo de varios tipos de cáncer. Obtenga más información aquí .
-                        Los huevos pueden transportar bacterias peligrosas como salmonella, campylobacter y listeria (especialmente para las mujeres embarazadas), todas las cuales se sabe que causan enfermedades graves en los humanos. Obtenga más información aquí .
-                        También está el tema de la contaminación debido a que las gallinas son alimentadas con alimentos cargados de pesticidas.
-                    </p>
-                </li>
-                <li>
-                    <h3>Etica</h3>
-                    <p>
-                        La industria de la puesta de huevos es intrínsecamente cruel. Millones de pollitos machos de un día de edad son triturados completamente conscientes o asfixiados por dióxido de carbono porque no ponen huevos y se consideran redundantes en la industria.
-                        Las gallinas ponedoras son criadas y criadas únicamente para poner huevos para el consumo humano. Se mantienen en condiciones sucias, ya sea en jaulas en batería de alambre desnudo, cobertizos abarrotados ('colocados en granero') o semi-al aire libre (llamados de rango libre).
-                        Las gallinas ponedoras han sido criadas para poner alrededor de 300 huevos por año, en lugar de los 12 o más que alguna vez pusieron sus ancestros aves de la selva.
-                        A pesar de una vida útil de hasta diez años, todas las gallinas (independientemente de cómo se críen) se envían al matadero alrededor de los 18 meses de edad, cuando ya no se consideran 'rentables'.
-                    </p>
-                </li>
-            </ol>
-        </div>
-    </main>
-    <footer>
-        <p class="text-center text-muted">Hecho por SADP</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+        </main>
+        <footer>
+            <p class="text-center text-muted">Hecho por SADP</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>

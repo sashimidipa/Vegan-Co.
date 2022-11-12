@@ -39,7 +39,7 @@ header {
 }
 .navbar {
 	width: 100%;
-	max-width: 1200;
+	max-width: 1800;
 	background-color: $background-color_1;
 }
 .navbar-brand {
@@ -397,26 +397,10 @@ h1{
 	color: $color_2;
 }
 .plan {
-	font-family: $font-family_6;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 100%;
-	line-height: 150%;
-	max-width: 100%;
-	padding: 0 4em 0 4em;
-	margin: 3em auto 0 auto;
-	color: $color_2;
+	@extend .about__us
 }
-.sust {
-	font-family: $font-family_6;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 100%;
-	line-height: 150%;
-	max-width: 100%;
-	padding: 0 4em 0 4em;
-	margin: 3em auto 0 auto;
-	color: $color_2;
+.sust{
+	@extend .about__us
 }
 .text_box_chalenge {
 	display: grid;
@@ -486,17 +470,21 @@ h1{
 	color: $color_11;
 }
 .content_panel {
-	font-family: $font-family_6;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 100%;
-	line-height: 150%;
-	width: 1000px;
-	max-width: 100%;
-	padding: 0 4em 0 4em;
-	margin: 3em auto;
-	color: $color_2;
+	@extend .about__us
 }
+.card_conteiner {
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	.card{
+		width: 100%;
+	}
+	.card-small{
+		width: 100%;
+		height: 75%;
+	}
+	
+}
+
 @media only screen and (min-width:420px){
 	.text_box_chalenge {
 		grid-template-rows: 50% 65%;
@@ -639,26 +627,12 @@ h1{
 		grid-template-columns: 17% 17% 17% 17% 30%;
 		grid-template-rows: 45% 45% 45%;
 	}
-	.challenge_panel {
-		grid-column-start: 1;
-		grid-column-end: 3;
-		grid-row-start: 1;
-		grid-row-end: 3;
-	}
 	.recipe_colection {
-		grid-column-start: 3;
-		grid-column-end: 4;
-		grid-row-start: 1;
-		grid-row-end: 2;
 		.text {
 			margin: 69% .3% 0 .3%;
 		}
 	}
 	.whyvegan {
-		grid-column-start: 4;
-		grid-column-end: 5;
-		grid-row-start: 1;
-		grid-row-end: 2;
 		.text {
 			margin: 55% .5% 0 .5%;
 		}
@@ -703,51 +677,27 @@ h1{
 		grid-template-columns: 17% 17% 17% 17% 30%;
 		grid-template-rows: 50% 50% 50%;
 	}
-	.challenge_panel {
-		grid-column-start: 1;
-		grid-column-end: 3;
-		grid-row-start: 1;
-		grid-row-end: 3;
-	}
 	.recipe_colection {
-		grid-column-start: 3;
-		grid-column-end: 4;
-		grid-row-start: 1;
-		grid-row-end: 2;
-		.text {
+			.text {
 			margin: 69% .3% 0 .3%;
 		}
 	}
 	.whyvegan {
-		grid-column-start: 4;
-		grid-column-end: 5;
-		grid-row-start: 1;
-		grid-row-end: 2;
 		.text {
 			margin: 65% 7% 0 7%;
 		}
 	}
 	.recipe1{
-		grid-column-start: 5;
-		grid-column-end: 6;
-		grid-row-start: 1;
-		grid-row-end: 2;
 		.text {
 			margin: 25% 5% 0 5%;
 		}
 	}
 	.recipe2{
-		grid-column-start: 3;
-		grid-column-end: 5;
-		grid-row-start: 2;
-		grid-row-end: 3;
 		.text {
 			margin: 20% 5% 0 5%;
 		}
 	}
 	.recipe3{
-		grid-column-start: 5;
-		grid-column-end: 6;
 		.text {
 			margin: 20% 5% 0 5%;
 		}

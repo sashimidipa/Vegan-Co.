@@ -15,142 +15,142 @@
         <link rel="stylesheet" href="../scss/style.css">
     </head>
     <body>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <header>
-        <nav class="navbar navbar-expand-lg" aria-label="Fifth navbar example">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../images/veganco-icon.png" alt="">
-                </a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse" id="navbarNavDropdown" style>
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DESAFIO DE 30 DIAS
-                            <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./chalenge.html" class="parent">Desafio vegano de 30 dias</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">COMIDA
-                            <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./recipes.html">Recetas</a></li>
-                                <li><a class="dropdown-item" href="./foodplan.html">Planificacion de comidas</a></li>
-                                <li><a class="dropdown-item" href="./sust.html">Sustitutos de alimentos</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DESCUBRIR
-                            <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./aboutus.html">Acerca de Vegan'Co.</a></li>
-                                <li><a class="dropdown-item" href="./whyvegan.html">Porque hacerse vegano</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">RECURSOS
-                            <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./contact.html">Contacto</a></li>
-                                <li><a class="dropdown-item" href="../index.html">Volver al inicio</a></li>
-                            </ul>
-                        </li>
+        <header>
+            <nav class="navbar navbar-expand-lg" aria-label="Fifth navbar example">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/veganco-icon.png" alt="">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarNavDropdown" style>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DESAFIO DE 30 DIAS
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./chalenge.html" class="parent">Desafio vegano de 30 dias</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">COMIDA
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./recipes.html">Recetas</a></li>
+                                    <li><a class="dropdown-item" href="./foodplan.html">Planificacion de comidas</a></li>
+                                    <li><a class="dropdown-item" href="./sust.html">Sustitutos de alimentos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DESCUBRIR
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./aboutus.html">Acerca de Vegan'Co.</a></li>
+                                    <li><a class="dropdown-item" href="./whyvegan.html">Porque hacerse vegano</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">RECURSOS
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./contact.html">Contacto</a></li>
+                                    <li><a class="dropdown-item" href="../index.html">Volver al inicio</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rightbox">
+                        <form id="search_form" action="" method="get">
+                            <input type="text" class="input_text" value="" title="Buescar..." placeholder="Buscar...">
+                            <button type="submit" class="imput_sumbit">
+                                <i class="material-icons">
+                                    <span class="materal-icons-otlined">
+                                        search
+                                    </span>
+                                </i>    
+                            </button>
+                        </form>
+                        <a href="./chalenge.html" class="chalenge">
+                            Asumir el desafio
+                        </a>    
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="styles_introduction">
+                <div class="text_box">
+                    <h1><datagrid>DIRECTRICES PARA PLANIFICAR COMIDAS VEGANAS</datagrid></h1>
+                </div>
+            </div>
+            <div class="plan">
+                <p>Al planificar comidas o menús veganos, el objetivo es que no solo sean sabrosos sino que:
+                    <ul>
+                        <li>Rico en nutrientes esenciales como vitaminas y minerales.</li>
+                        <li>No demasiado alto en grasas, sal y azúcar.</li>
+                        <li>Rico en fibra y otros componentes vegetales beneficiosos</li>
+                        <li>Llenando y proporcionando energía sostenida</li>
+                        <li>El contenido de energía (calorías/kilojulios) debe ser apropiado para su nivel de actividad.</li>
                     </ul>
-                </div>
-                <div class="rightbox">
-                    <form id="search_form" action="" method="get">
-                        <input type="text" class="input_text" value="" title="Buescar..." placeholder="Buscar...">
-                        <button type="submit" class="imput_sumbit">
-                            <i class="material-icons">
-                                <span class="materal-icons-otlined">
-                                    search
-                                </span>
-                            </i>    
-                        </button>
-                    </form>
-                    <a href="./chalenge.html" class="chalenge">
-                        Asumir el desafio
-                    </a>    
-                </div>
+                    
+                    
+                    <ol>Las siguientes pautas ayudarán a lograr estos objetivos:
+                        <li>
+                            Trate de incluir lo siguiente en cada comida principal:
+                            <ul>
+                                <li>
+                                    Verduras verdes : preferiblemente frescas, por ejemplo, brócoli, bok choy, judías verdes, guisantes (los congelados están bien), espinacas, calabacines, apio, etc. Cantidad : al menos una taza por persona.
+                                </li>
+                                <li>
+                                    Verduras rojas/anaranjadas/amarillas : preferiblemente frescas, por ejemplo, zanahorias, calabaza, maíz, tomate, calabaza amarilla, camote, etc. Cantidad : al menos 1/2 taza por persona Nota : aumentar la ingesta de verduras sirviendo una ensalada con las comidas una buena idea.
+                                </li>
+                                <li>
+                                    Una fuente de proteína vegetal , como legumbres (frijoles, lentejas, garbanzos) o productos de soya (tofu, tempeh) o nueces/semillas u ocasionalmente un alimento de proteína vegetal procesada como una carne de origen vegetal. Cantidad : 1/2 – 1 taza de legumbres cocidas o 100 g de tofu orgánico o tempeh o una hamburguesa vegetariana o 1-2 salchichas veganas (con poca frecuencia).
+                                </li>
+                                <li>
+                                    Una fuente de carbohidratos complejos , como papa, arroz integral, pasta/fideos, cuscús, pan integral, etc. Cantidad : variará según el hambre y la actividad física que tenga. Por ejemplo, para personas inactivas, 1/2 taza de arroz puede ser suficiente, mientras que una persona más activa podría comer dos tazas o más.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Agregue variedad y sabor a las comidas al incluir otros ingredientes opcionales como:
+                            <ul>
+                                <li>
+                                    Verduras adicionales, como champiñones, berenjenas, remolachas, cebollas, algas, brotes, brotes de bambú, etc.
+                                </li>
+                                <li>
+                                    Hierbas y especias: frescas o secas, como albahaca, orégano, cilantro, ajo, jengibre, chile, pimienta, semillas de mostaza, etc. Utilícelas generosamente.
+                                </li>
+                                <li>
+                                    Pasta de tomate o puré de tomate.
+                                </li>
+                                <li>
+                                    Frutas / jugos: como sultanas, piña, jugo de limón.
+                                </li>
+                                <li>
+                                    Leche vegetal para la elaboración de salsas blancas (ej. leche de soja, leche de avena).
+                                </li>
+                                <li>
+                                    Sal: se recomienda que si se usa sal, sea sal yodada y se use con moderación. Los cubitos de caldo, la salsa de soya y otras salsas también son fuentes de sal y, si se usan, deben usarse con moderación.
+                                </li>
+                                <li>
+                                    Aceites: utilícelos con moderación o no los use en absoluto. El aceite de linaza, el aceite de oliva y el aceite de canola no transgénico son las mejores opciones para los veganos, debido a su perfil de ácidos grasos. El aceite de linaza se puede agregar a las ensaladas, pero no es adecuado para cocinar.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </p>
             </div>
-        </nav>
-    </header>
-    <main>
-        <div class="styles_introduction">
-            <div class="text_box">
-                <h1><datagrid>DIRECTRICES PARA PLANIFICAR COMIDAS VEGANAS</datagrid></h1>
-            </div>
-        </div>
-        <div class="plan">
-            <p>Al planificar comidas o menús veganos, el objetivo es que no solo sean sabrosos sino que:
-                <ul>
-                    <li>Rico en nutrientes esenciales como vitaminas y minerales.</li>
-                    <li>No demasiado alto en grasas, sal y azúcar.</li>
-                    <li>Rico en fibra y otros componentes vegetales beneficiosos</li>
-                    <li>Llenando y proporcionando energía sostenida</li>
-                    <li>El contenido de energía (calorías/kilojulios) debe ser apropiado para su nivel de actividad.</li>
-                </ul>
-                
-                
-                <ol>Las siguientes pautas ayudarán a lograr estos objetivos:
-                    <li>
-                        Trate de incluir lo siguiente en cada comida principal:
-                        <ul>
-                            <li>
-                                Verduras verdes : preferiblemente frescas, por ejemplo, brócoli, bok choy, judías verdes, guisantes (los congelados están bien), espinacas, calabacines, apio, etc. Cantidad : al menos una taza por persona.
-                            </li>
-                            <li>
-                                Verduras rojas/anaranjadas/amarillas : preferiblemente frescas, por ejemplo, zanahorias, calabaza, maíz, tomate, calabaza amarilla, camote, etc. Cantidad : al menos 1/2 taza por persona Nota : aumentar la ingesta de verduras sirviendo una ensalada con las comidas una buena idea.
-                            </li>
-                            <li>
-                                Una fuente de proteína vegetal , como legumbres (frijoles, lentejas, garbanzos) o productos de soya (tofu, tempeh) o nueces/semillas u ocasionalmente un alimento de proteína vegetal procesada como una carne de origen vegetal. Cantidad : 1/2 – 1 taza de legumbres cocidas o 100 g de tofu orgánico o tempeh o una hamburguesa vegetariana o 1-2 salchichas veganas (con poca frecuencia).
-                            </li>
-                            <li>
-                                Una fuente de carbohidratos complejos , como papa, arroz integral, pasta/fideos, cuscús, pan integral, etc. Cantidad : variará según el hambre y la actividad física que tenga. Por ejemplo, para personas inactivas, 1/2 taza de arroz puede ser suficiente, mientras que una persona más activa podría comer dos tazas o más.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        Agregue variedad y sabor a las comidas al incluir otros ingredientes opcionales como:
-                        <ul>
-                            <li>
-                                Verduras adicionales, como champiñones, berenjenas, remolachas, cebollas, algas, brotes, brotes de bambú, etc.
-                            </li>
-                            <li>
-                                Hierbas y especias: frescas o secas, como albahaca, orégano, cilantro, ajo, jengibre, chile, pimienta, semillas de mostaza, etc. Utilícelas generosamente.
-                            </li>
-                            <li>
-                                Pasta de tomate o puré de tomate.
-                            </li>
-                            <li>
-                                Frutas / jugos: como sultanas, piña, jugo de limón.
-                            </li>
-                            <li>
-                                Leche vegetal para la elaboración de salsas blancas (ej. leche de soja, leche de avena).
-                            </li>
-                            <li>
-                                Sal: se recomienda que si se usa sal, sea sal yodada y se use con moderación. Los cubitos de caldo, la salsa de soya y otras salsas también son fuentes de sal y, si se usan, deben usarse con moderación.
-                            </li>
-                            <li>
-                                Aceites: utilícelos con moderación o no los use en absoluto. El aceite de linaza, el aceite de oliva y el aceite de canola no transgénico son las mejores opciones para los veganos, debido a su perfil de ácidos grasos. El aceite de linaza se puede agregar a las ensaladas, pero no es adecuado para cocinar.
-                            </li>
-                        </ul>
-                    </li>
-                </ol>
-            </p>
-        </div>
-    </main>
-    <footer>
-        <p class="text-center text-muted">Hecho por SADP</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-</body>
+        </main>
+        <footer>
+            <p class="text-center text-muted">Hecho por SADP</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    </body>
 </html>
