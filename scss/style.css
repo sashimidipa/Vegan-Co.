@@ -1,6 +1,6 @@
 body {
   width: 100%;
-  max-width: 1800px;
+  max-width: 100%;
   margin: 0;
   color: #333;
   font-size: 12px;
@@ -17,12 +17,12 @@ header {
 
 .navbar {
   width: 100%;
-  max-width: 1800;
+  max-width: 100%;
   background-color: #E7F4E1;
 }
 
 .navbar-brand {
-  width: 5%;
+  width: 10%;
 }
 
 img {
@@ -169,7 +169,7 @@ a {
 
 .boxlyout {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 49.5% 49.5%;
   grid-template-rows: 50% 28% 28% 28% 28%;
   -moz-column-gap: 0.5%;
        column-gap: 0.5%;
@@ -488,6 +488,56 @@ h1 {
   height: 75%;
 }
 
+.recipe {
+  text-align: center;
+}
+.recipe img {
+  width: 100%;
+}
+.recipe .intro {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150%;
+  line-height: 150%;
+  max-width: 100%;
+  color: #000000;
+}
+
+.admixtures h3 {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 125%;
+  line-height: 150%;
+  max-width: 100%;
+  color: #000000;
+}
+
+.styles_introduction_recipes {
+  display: grid;
+  grid-template-columns: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: url(../images/recipesback.png) no-repeat;
+  background-size: 100%;
+}
+.styles_introduction_recipes .text_box_recipes {
+  display: block;
+  height: 15%;
+  max-width: 100%;
+  padding: 100px 43px;
+  margin: 0px auto 0 auto;
+  font-family: "Nunito Sans";
+  line-height: 65px;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+  font-weight: 800;
+}
+
 @media only screen and (min-width: 420px) {
   .text_box_chalenge {
     grid-template-rows: 50% 65%;
@@ -543,7 +593,7 @@ h1 {
 }
 @media only screen and (min-width: 768px) {
   .boxlyout {
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
     grid-template-rows: 34% 34% 34%;
   }
   .challenge_panel {
@@ -609,6 +659,9 @@ h1 {
   }
 }
 @media only screen and (min-width: 1000px) {
+  .navbar-brand {
+    width: 5%;
+  }
   .rightbox {
     display: block;
   }
@@ -660,7 +713,7 @@ h1 {
   }
   .boxlyout {
     grid-template-columns: 17% 17% 17% 17% 30%;
-    grid-template-rows: 50% 50% 50%;
+    grid-template-rows: 55% 55% 55%;
   }
   .recipe_colection .text {
     margin: 69% 0.3% 0 0.3%;

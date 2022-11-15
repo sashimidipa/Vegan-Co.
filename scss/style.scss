@@ -24,7 +24,7 @@ $background-color_5: #B7D295;
 
 body {
 	width: 100%;
-	max-width: 1800px;
+	max-width: 100%;
 	margin: 0;
 	color: $color_1;
 	font-size: 12px;
@@ -39,11 +39,11 @@ header {
 }
 .navbar {
 	width: 100%;
-	max-width: 1800;
+	max-width: 100%;
 	background-color: $background-color_1;
 }
 .navbar-brand {
-	width: 5%;
+	width: 10%;
 }
 img {
 	width: 100%;
@@ -180,7 +180,7 @@ a {
 }
 .boxlyout {
 	display: grid;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 49.5% 49.5%;
 	grid-template-rows: 50% 28% 28% 28% 28%;
 	column-gap:.5%;
 	row-gap: .5%;
@@ -397,10 +397,10 @@ h1{
 	color: $color_2;
 }
 .plan {
-	@extend .about__us
+	@extend .about__us;
 }
 .sust{
-	@extend .about__us
+	@extend .about__us;
 }
 .text_box_chalenge {
 	display: grid;
@@ -470,7 +470,7 @@ h1{
 	color: $color_11;
 }
 .content_panel {
-	@extend .about__us
+	@extend .about__us;
 }
 .card_conteiner {
 	display: grid;
@@ -482,9 +482,56 @@ h1{
 		width: 100%;
 		height: 75%;
 	}
-	
 }
-
+.recipe{
+	text-align: center;
+	img{
+		width: 100%;
+	}
+	.intro{
+		font-family: $font-family_6;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 150%;
+		line-height: 150%;
+		max-width: 100%;
+		color: $color_2;
+	}
+}
+.admixtures{
+	h3{
+		font-family: $font-family_6;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 125%;
+		line-height: 150%;
+		max-width: 100%;
+		color: $color_2;
+	}
+}
+.styles_introduction_recipes{
+	display: grid;
+	grid-template-columns: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: url(../images/recipesback.png) no-repeat;
+	background-size: 100%;
+	.text_box_recipes{
+		display: block;
+		height: 15%;
+		max-width: 100%;
+		padding: 100px 43px;
+		margin: 0px auto 0 auto;
+		font-family: $font-family_6;
+		line-height: 65px;
+		text-align: center;
+		color: $color_5;
+		box-sizing: border-box;
+		font-weight: 800;
+}
+}
 @media only screen and (min-width:420px){
 	.text_box_chalenge {
 		grid-template-rows: 50% 65%;
@@ -554,7 +601,7 @@ h1{
 }
 @media only screen and (min-width:768px){
 	.boxlyout{
-		grid-template-columns: 25% 25% 25% 25%;
+		grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
 		grid-template-rows: 34% 34% 34%;
 	}
 	.challenge_panel {
@@ -620,6 +667,9 @@ h1{
 	}
 }
 @media only screen and (min-width:1000px){
+	.navbar-brand {
+		width: 5%;
+	}
 	.rightbox {
 		display: block;
 	}
@@ -675,7 +725,7 @@ h1{
 	}
 	.boxlyout{
 		grid-template-columns: 17% 17% 17% 17% 30%;
-		grid-template-rows: 50% 50% 50%;
+		grid-template-rows: 55% 55% 55%;
 	}
 	.recipe_colection {
 			.text {
