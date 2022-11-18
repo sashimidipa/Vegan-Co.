@@ -398,6 +398,20 @@ h1{
 }
 .plan {
 	@extend .about__us;
+	p{
+		font-size: 250%;
+	}
+	ul{
+		line-height: 150%;
+		font-size: 150%;
+	}
+	ol{
+		line-height: 150%;
+		font-size: 100%;
+	}
+	h3{
+		font-weight: 700;
+	}
 }
 .sust{
 	@extend .about__us;
@@ -471,6 +485,14 @@ h1{
 }
 .content_panel {
 	@extend .about__us;
+	ul{
+		line-height: 150%;
+		font-size: 150%;
+	}
+	p{
+		line-height: 150%;
+		font-size: 150%;
+	}
 }
 .card_conteiner {
 	display: grid;

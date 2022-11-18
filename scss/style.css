@@ -397,6 +397,21 @@ h1 {
   color: #000000;
 }
 
+.plan p {
+  font-size: 250%;
+}
+.plan ul {
+  line-height: 150%;
+  font-size: 150%;
+}
+.plan ol {
+  line-height: 150%;
+  font-size: 100%;
+}
+.plan h3 {
+  font-weight: 700;
+}
+
 .text_box_chalenge {
   display: grid;
   grid-template-columns: 100%;
@@ -474,6 +489,15 @@ h1 {
   line-height: 150%;
   text-align: left;
   color: #FFFFFF;
+}
+
+.content_panel ul {
+  line-height: 150%;
+  font-size: 150%;
+}
+.content_panel p {
+  line-height: 150%;
+  font-size: 150%;
 }
 
 .card_conteiner {
