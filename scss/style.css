@@ -506,7 +506,8 @@ h1 {
   border-radius: 18px;
   border: none;
 }
-.text_box_chalenge .text_box_guidelines {
+
+.text_box_guidelines {
   grid-column-start: 1;
   width: 100%;
   font-family: "Nunito Sans";

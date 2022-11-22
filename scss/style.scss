@@ -501,18 +501,18 @@ h1{
 		border-radius: 18px;
 		border: none;
 	}
-	.text_box_guidelines {
-		grid-column-start: 1;
-		width: 100%;
-		font-family: $font-family_6;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 100%;
-		line-height: 150%;
-		text-align: left;
-		color: $color_11;
-	}
 }
+.text_box_guidelines {
+	grid-column-start: 1;
+	width: 100%;
+	font-family: $font-family_6;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 100%;
+	line-height: 150%;
+	text-align: left;
+	color: $color_11;
+} 
 .text_box_contact{
 	display: grid;
 	grid-template-columns: 100%;
