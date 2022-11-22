@@ -559,6 +559,21 @@ h1 {
 .text_box_contact .input_text_contact::placeholder {
   color: #B7D295;
 }
+.text_box_contact .sumbit {
+  width: 50%;
+  height: 43px;
+  margin: 2% 25%;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100%;
+  line-height: 25px;
+  text-align: center;
+  color: #0A5C13;
+  background-color: #B7D295;
+  border-radius: 18px;
+  border: none;
+}
 
 .content_panel ul {
   line-height: 150%;
@@ -679,11 +694,11 @@ h1 {
     margin: 30% 5% 0 5%;
   }
   .plan {
-    grid-template-rows: 8% 12% 12% 70%;
+    grid-template-rows: 10% 11% 5% 70%;
   }
   .plan .instructions {
     font-size: 150%;
-    margin-bottom: 25%;
+    margin-bottom: 35%;
   }
   .whyveg {
     grid-template-rows: 5% 1.5% 6.5% 1.5% 4.5% 1%;
@@ -725,7 +740,7 @@ h1 {
     margin: 35% 5% 0 5%;
   }
   .plan {
-    grid-template-rows: 8% 10% 20% 50%;
+    grid-template-rows: 8% 12% 10% 50%;
   }
   .plan .instructions {
     font-size: 150%;
@@ -803,7 +818,7 @@ h1 {
     font-size: 150%;
   }
   .plan {
-    grid-template-rows: 8% 10% 25% 50%;
+    grid-template-rows: 8% 9% 18% 50%;
   }
   .plan .instructions {
     font-size: 150%;
@@ -875,7 +890,7 @@ h1 {
     width: 80%;
   }
   .plan {
-    grid-template-rows: 8% 12% 25% 50%;
+    grid-template-rows: 8% 12% 18% 50%;
   }
   .plan .instructions {
     font-size: 150%;
@@ -950,14 +965,14 @@ h1 {
     width: 60%;
   }
   .plan {
-    grid-template-rows: 8% 18% 30% 25%;
+    grid-template-rows: 8% 10% 25% 25%;
   }
   .plan .instructions {
     font-size: 150%;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
   }
   .plan img {
-    width: 25%;
+    width: 50%;
     margin: 0 20%;
   }
   .whyveg {
