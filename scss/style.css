@@ -409,6 +409,7 @@ h1 {
 .whyveg img {
   width: 90%;
   margin: 10% 10%;
+  border-radius: 1.8%;
 }
 
 .plan {
@@ -617,6 +618,7 @@ h1 {
   grid-row-end: 2;
   width: 60%;
   margin: 10% 20%;
+  border-radius: 1.8%;
 }
 .recipe .intro {
   font-family: "Nunito Sans";
