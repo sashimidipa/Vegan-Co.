@@ -385,11 +385,11 @@ h1 {
   background: #E7F4E1;
 }
 
-.about__us, .content_panel, .sust, .plan {
+.about__us, .content_panel, .sust, .plan, .whyveg {
   font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 100%;
+  font-size: 150%;
   line-height: 150%;
   max-width: 100%;
   padding: 0 4em 0 4em;
@@ -397,16 +397,48 @@ h1 {
   color: #000000;
 }
 
-.plan p {
-  font-size: 250%;
+.whyveg {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 6% 2% 6% 1.5% 5% 1%;
+  margin-bottom: 10%;
 }
-.plan ul {
+.whyveg h2 {
+  font-weight: 700;
+}
+.whyveg img {
+  width: 90%;
+  margin: 10% 10%;
+}
+
+.plan {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 8% 11% 6% 20%;
+}
+.plan img {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  width: 90%;
+  margin: 0 8%;
+}
+.plan p {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  font-size: 250%;
+  line-height: 150%;
+}
+.plan .list1 {
+  grid-column-start: 1;
+  grid-row-start: 2;
   line-height: 150%;
   font-size: 150%;
 }
-.plan ol {
+.plan .instructions {
+  grid-column-start: 1;
+  grid-row-start: 4;
   line-height: 150%;
-  font-size: 100%;
+  font-size: 145%;
 }
 .plan h3 {
   font-weight: 700;
@@ -423,8 +455,7 @@ h1 {
   box-sizing: border-box;
   background: #21832A;
 }
-
-.chalenge_singup {
+.text_box_chalenge .chalenge_singup {
   grid-column-start: 1;
   grid-row-start: 2;
   vertical-align: center;
@@ -436,8 +467,7 @@ h1 {
   box-sizing: border-box;
   border-radius: 0.2em;
 }
-
-.input_text_chalenge {
+.text_box_chalenge .input_text_chalenge {
   width: 100%;
   margin-bottom: 2%;
   padding: 0.7rem 1rem;
@@ -448,22 +478,20 @@ h1 {
   border: none;
   box-shadow: none;
 }
-.input_text_chalenge::-moz-placeholder {
+.text_box_chalenge .input_text_chalenge::-moz-placeholder {
   color: #B7D295;
 }
-.input_text_chalenge:-ms-input-placeholder {
+.text_box_chalenge .input_text_chalenge:-ms-input-placeholder {
   color: #B7D295;
 }
-.input_text_chalenge::placeholder {
+.text_box_chalenge .input_text_chalenge::placeholder {
   color: #B7D295;
 }
-
-.acceptterms {
+.text_box_chalenge .acceptterms {
   font-size: 100%;
   color: #B7D295;
 }
-
-.sumbit {
+.text_box_chalenge .sumbit {
   width: 50%;
   height: 43px;
   margin: 2% 25%;
@@ -478,8 +506,7 @@ h1 {
   border-radius: 18px;
   border: none;
 }
-
-.text_box_guidelines {
+.text_box_chalenge .text_box_guidelines {
   grid-column-start: 1;
   width: 100%;
   font-family: "Nunito Sans";
@@ -489,6 +516,47 @@ h1 {
   line-height: 150%;
   text-align: left;
   color: #FFFFFF;
+}
+
+.text_box_contact {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+  max-width: 100%;
+  padding: 100px 43px;
+  margin: 0px auto 0 auto;
+  box-sizing: border-box;
+  background: #21832A;
+}
+.text_box_contact .contact_singup {
+  vertical-align: center;
+  overflow: hidden;
+  width: 60%;
+  height: 100%;
+  padding: 3em 3.5em 3.5em 3.5em;
+  background: #306441;
+  box-sizing: border-box;
+  border-radius: 0.2em;
+}
+.text_box_contact .input_text_contact {
+  width: 100%;
+  margin-bottom: 2%;
+  padding: 0.7rem 1rem;
+  font-size: 100%;
+  line-height: 1em;
+  background-color: #4D8052;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: none;
+}
+.text_box_contact .input_text_contact::-moz-placeholder {
+  color: #B7D295;
+}
+.text_box_contact .input_text_contact:-ms-input-placeholder {
+  color: #B7D295;
+}
+.text_box_contact .input_text_contact::placeholder {
+  color: #B7D295;
 }
 
 .content_panel ul {
@@ -502,21 +570,37 @@ h1 {
 
 .card_conteiner {
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-columns: 100%;
+  grid-template-rows: 33.3% 31% 28%;
 }
 .card_conteiner .card {
-  width: 100%;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-top: 2%;
 }
-.card_conteiner .card-small {
+.card_conteiner .card .card-img-top {
   width: 100%;
-  height: 75%;
+  height: 65%;
+}
+.card_conteiner .card-small1 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.card_conteiner .card-small2 {
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .recipe {
+  display: grid;
+  grid-template-columns: 100%;
   text-align: center;
 }
 .recipe img {
-  width: 100%;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 60%;
+  margin: 10% 20%;
 }
 .recipe .intro {
   font-family: "Nunito Sans";
@@ -546,13 +630,13 @@ h1 {
   padding: 0;
   text-align: center;
   background: url(../images/recipesback.png) no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 .styles_introduction_recipes .text_box_recipes {
   display: block;
   height: 15%;
   max-width: 100%;
-  padding: 100px 43px;
+  padding: 23% 4.3%;
   margin: 0px auto 0 auto;
   font-family: "Nunito Sans";
   line-height: 65px;
@@ -593,6 +677,31 @@ h1 {
   .recipe3 .text {
     margin: 30% 5% 0 5%;
   }
+  .plan {
+    grid-template-rows: 8% 12% 12% 70%;
+  }
+  .plan .instructions {
+    font-size: 150%;
+    margin-bottom: 25%;
+  }
+  .whyveg {
+    grid-template-rows: 5% 1.5% 6.5% 1.5% 4.5% 1%;
+    margin-bottom: 15%;
+  }
+  .card {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 1%;
+  }
+  .card .card-img-top {
+    height: 100%;
+  }
+  .styles_introduction_recipes {
+    background-size: 100% 100%;
+  }
+  .styles_introduction_recipes .text_box_recipes {
+    padding: 15% 4.3%;
+  }
 }
 @media only screen and (min-width: 600px) {
   .boxlyout {
@@ -613,6 +722,17 @@ h1 {
   }
   .recipe3 .text {
     margin: 35% 5% 0 5%;
+  }
+  .plan {
+    grid-template-rows: 8% 10% 20% 50%;
+  }
+  .plan .instructions {
+    font-size: 150%;
+    margin-bottom: 15%;
+  }
+  .whyveg {
+    grid-template-rows: 5% 1.5% 7% 1.5% 4.5% 1%;
+    margin-bottom: 30%;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -681,6 +801,29 @@ h1 {
     grid-column-start: 2;
     font-size: 150%;
   }
+  .plan {
+    grid-template-rows: 8% 10% 25% 50%;
+  }
+  .plan .instructions {
+    font-size: 150%;
+    margin-bottom: 15%;
+  }
+  .whyveg {
+    grid-template-rows: 3% 1.5% 8% 1.5% 3% 1%;
+    margin-bottom: 30%;
+  }
+  .card_conteiner {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 90%;
+  }
+  .card_conteiner .card-small1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .card_conteiner .card-small2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .navbar-brand {
@@ -730,6 +873,47 @@ h1 {
   .text_box_guidelines {
     width: 80%;
   }
+  .plan {
+    grid-template-rows: 8% 12% 25% 50%;
+  }
+  .plan .instructions {
+    font-size: 150%;
+    margin-bottom: 10%;
+  }
+  .plan img {
+    width: 50%;
+    margin: 0 20%;
+  }
+  .whyveg {
+    grid-template-rows: 4% 1% 8% 1.5% 3% 1%;
+    margin-bottom: 10%;
+  }
+  .whyveg img {
+    width: 50%;
+    margin: 5% 20%;
+  }
+  .styles_introduction_recipes {
+    background-size: 100% 100%;
+  }
+  .styles_introduction_recipes .text_box_recipes {
+    padding: 9% 4.3%;
+  }
+  .recipe img {
+    margin: 5% 20%;
+  }
+  .recipe .intro {
+    font-size: 200%;
+  }
+  .admixtures h3 {
+    font-size: 150%;
+  }
+  .admixtures ul {
+    font-size: 150%;
+    line-height: 150%;
+  }
+  .admixtures h4 {
+    font-size: 300%;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .rightbox {
@@ -763,5 +947,20 @@ h1 {
   }
   .text_box_guidelines {
     width: 60%;
+  }
+  .plan {
+    grid-template-rows: 8% 18% 30% 25%;
+  }
+  .plan .instructions {
+    font-size: 150%;
+    margin-bottom: 10%;
+  }
+  .plan img {
+    width: 25%;
+    margin: 0 20%;
+  }
+  .whyveg {
+    grid-template-rows: 4% 1% 8% 1.5% 3% 1%;
+    margin-bottom: 25%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -389,25 +389,55 @@ h1{
 	font-family: $font-family_6;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 100%;
+	font-size: 150%;
 	line-height: 150%;
 	max-width: 100%;
 	padding: 0 4em 0 4em;
 	margin: 3em auto 0 auto;
 	color: $color_2;
 }
+.whyveg{
+	@extend .about__us;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 6% 2% 6% 1.5% 5% 1%;
+	margin-bottom: 10%;
+	h2{
+		font-weight: 700;
+	}
+	img{ 
+		width:90% ;
+		margin: 10% 10%;
+	}
+}
 .plan {
 	@extend .about__us;
-	p{
-		font-size: 250%;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 8% 11% 6% 20%;
+	img{
+		grid-column-start: 1;
+		grid-row-start: 3;
+		width: 90%;
+		margin: 0 8%;
 	}
-	ul{
+	p{
+		grid-column-start: 1;
+		grid-row-start: 1;
+		font-size: 250%;
+		line-height: 150%;
+	}
+	.list1{
+		grid-column-start: 1;
+		grid-row-start: 2;
 		line-height: 150%;
 		font-size: 150%;
 	}
-	ol{
+	.instructions{
+		grid-column-start: 1;
+		grid-row-start: 4;
 		line-height: 150%;
-		font-size: 100%;
+		font-size: 145%;
 	}
 	h3{
 		font-weight: 700;
@@ -426,62 +456,96 @@ h1{
 	margin: 0px auto 0 auto;
 	box-sizing: border-box;
 	background: #21832A;
-}
-.chalenge_singup {
-	grid-column-start: 1;
-	grid-row-start: 2;
-	vertical-align: center;
-	overflow: hidden;
-	width: 100%;
-	height: 100%;
-	padding: 3em 3.5em 3.5em 3.5em;
-	background: #306441;
-	box-sizing: border-box;
-	border-radius: 0.2em;
-}
-.input_text_chalenge {
-	width: 100%;
-	margin-bottom: 2%;
-	padding: 0.7rem 1rem;
-	font-size: 100%;
-	line-height: 1em;
-	background-color: $background-color_4;
-	box-sizing: border-box;
-	border: none;
-	box-shadow: none;
-	&::placeholder {
+	.chalenge_singup {
+		grid-column-start: 1;
+		grid-row-start: 2;
+		vertical-align: center;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		padding: 3em 3.5em 3.5em 3.5em;
+		background: #306441;
+		box-sizing: border-box;
+		border-radius: 0.2em;
+	}
+	.input_text_chalenge {
+		width: 100%;
+		margin-bottom: 2%;
+		padding: 0.7rem 1rem;
+		font-size: 100%;
+		line-height: 1em;
+		background-color: $background-color_4;
+		box-sizing: border-box;
+		border: none;
+		box-shadow: none;
+		&::placeholder {
+			color: $color_10;
+		}
+	}
+	.acceptterms {
+		font-size: 100%;
 		color: $color_10;
 	}
+	.sumbit {
+		width: 50%;
+		height: 43px;
+		margin: 2% 25%;
+		font-family: $font-family_7;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 100%;
+		line-height: 25px;
+		text-align: center;
+		color: $color_9;
+		background-color: $background-color_5;
+		border-radius: 18px;
+		border: none;
+	}
+	.text_box_guidelines {
+		grid-column-start: 1;
+		width: 100%;
+		font-family: $font-family_6;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 100%;
+		line-height: 150%;
+		text-align: left;
+		color: $color_11;
+	}
 }
-.acceptterms {
-	font-size: 100%;
-	color: $color_10;
-}
-.sumbit {
-	width: 50%;
-	height: 43px;
-	margin: 2% 25%;
-	font-family: $font-family_7;
-	font-style: normal;
-	font-weight: 900;
-	font-size: 100%;
-	line-height: 25px;
-	text-align: center;
-	color: $color_9;
-	background-color: $background-color_5;
-	border-radius: 18px;
-	border: none;
-}
-.text_box_guidelines {
-	grid-column-start: 1;
-	width: 100%;
-	font-family: $font-family_6;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 100%;
-	line-height: 150%;
-	text-align: left;
-	color: $color_11;
+.text_box_contact{
+	display: grid;
+	grid-template-columns: 100%;
+	justify-items: center;
+	max-width: 100%;
+	padding: 100px 43px;
+	margin: 0px auto 0 auto;
+	box-sizing: border-box;
+	background: #21832A;
+	.contact_singup {
+		vertical-align: center;
+		overflow: hidden;
+		width: 60%;
+		height: 100%;
+		padding: 3em 3.5em 3.5em 3.5em;
+		background: #306441;
+		box-sizing: border-box;
+		border-radius: 0.2em;
+	}
+	.input_text_contact {
+		width: 100%;
+		margin-bottom: 2%;
+		padding: 0.7rem 1rem;
+		font-size: 100%;
+		line-height: 1em;
+		background-color: $background-color_4;
+		box-sizing: border-box;
+		border: none;
+		box-shadow: none;
+		&::placeholder {
+			color: $color_10;
+		}
+	}
 }
 .content_panel {
 	@extend .about__us;
@@ -496,19 +560,35 @@ h1{
 }
 .card_conteiner {
 	display: grid;
-	grid-template-columns: 33.3% 33.3% 33.3%;
+	grid-template-columns: 100%;
+	grid-template-rows: 33.3% 31% 28%;
 	.card{
-		width: 100%;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		margin-top: 2%;
+		.card-img-top{
+			width: 100%;
+			height: 65%;
+		}
 	}
-	.card-small{
-		width: 100%;
-		height: 75%;
+	.card-small1{
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+	.card-small2{
+		grid-row-start: 3;
+		grid-row-end: 4;
 	}
 }
 .recipe{
+	display: grid;
+	grid-template-columns: 100%;
 	text-align: center;
 	img{
-		width: 100%;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		width: 60%;
+		margin: 10% 20%;
 	}
 	.intro{
 		font-family: $font-family_6;
@@ -539,12 +619,12 @@ h1{
 	padding: 0;
 	text-align: center;
 	background: url(../images/recipesback.png) no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 	.text_box_recipes{
 		display: block;
 		height: 15%;
 		max-width: 100%;
-		padding: 100px 43px;
+		padding: 23% 4.3%;
 		margin: 0px auto 0 auto;
 		font-family: $font-family_6;
 		line-height: 65px;
@@ -552,7 +632,7 @@ h1{
 		color: $color_5;
 		box-sizing: border-box;
 		font-weight: 800;
-}
+	}
 }
 @media only screen and (min-width:420px){
 	.text_box_chalenge {
@@ -589,6 +669,31 @@ h1{
 			margin: 30% 5% 0 5%;
 		}
 	}
+	.plan {
+		grid-template-rows: 8% 12% 12% 70%;
+		.instructions{
+			font-size: 150%;
+			margin-bottom: 25%;
+		}
+	}
+	.whyveg{
+		grid-template-rows: 5% 1.5% 6.5% 1.5% 4.5% 1%;
+		margin-bottom: 15%;
+	}
+	.card{
+		grid-row-start: 1;
+		grid-row-end: 2;
+		margin-top: 1%;
+		.card-img-top{
+			height: 100%;
+		}
+	}
+	.styles_introduction_recipes{
+		background-size: 100% 100%;
+		.text_box_recipes{
+			padding: 15% 4.3%;
+		}
+	}
 }
 @media only screen and (min-width:600px){
 	.boxlyout{
@@ -619,6 +724,17 @@ h1{
 		.text {
 			margin: 35% 5% 0 5%;
 		}
+	}
+	.plan {
+		grid-template-rows: 8% 10% 20% 50%;
+		.instructions{
+			font-size: 150%;
+			margin-bottom: 15%;
+		}
+	}
+	.whyveg{
+		grid-template-rows: 5% 1.5% 7% 1.5% 4.5% 1%;
+		margin-bottom: 30%;
 	}
 }
 @media only screen and (min-width:768px){
@@ -687,6 +803,29 @@ h1{
 		grid-column-start: 2;
 		font-size: 150%;
 	}
+	.plan {
+		grid-template-rows: 8% 10% 25% 50%;
+		.instructions{
+			font-size: 150%;
+			margin-bottom: 15%;
+		}
+	}
+	.whyveg{
+		grid-template-rows: 3% 1.5% 8% 1.5% 3% 1%;
+		margin-bottom: 30%;
+	}
+	.card_conteiner {
+		grid-template-columns: 33.3% 33.3% 33.3%;
+		grid-template-rows: 90%;
+		.card-small1{
+			grid-row-start: 1;
+			grid-row-end: 2;
+		}
+		.card-small2{
+			grid-row-start: 1;
+			grid-row-end: 2;
+		}
+	}
 }
 @media only screen and (min-width:1000px){
 	.navbar-brand {
@@ -740,6 +879,51 @@ h1{
 	.text_box_guidelines {
 		width: 80%;
 	}
+	.plan {
+		grid-template-rows: 8% 12% 25% 50%;
+		.instructions{
+			font-size: 150%;
+			margin-bottom: 10%;
+		}
+		img{
+			width: 50%;
+			margin: 0 20%;
+		}
+	}
+	.whyveg{
+		grid-template-rows: 4% 1% 8% 1.5% 3% 1%;
+		margin-bottom: 10%;
+		img{
+			width: 50%;
+			margin: 5% 20%;
+		}
+	}
+	.styles_introduction_recipes{
+		background-size: 100% 100%;
+		.text_box_recipes{
+			padding: 9% 4.3%;
+		}
+	}
+	.recipe{
+		img{
+			margin: 5% 20%;
+		}
+		.intro{
+			font-size: 200%;
+		}
+	}
+	.admixtures{
+		h3{
+			font-size: 150%;
+		}
+		ul{
+			font-size: 150%;
+			line-height: 150%;
+		}
+		h4{
+			font-size: 300%;
+		}
+	}
 }
 @media only screen and (min-width:1200px){
 	.rightbox {
@@ -783,5 +967,20 @@ h1{
 	}
 	.text_box_guidelines {
 		width: 60%;
+	}
+	.plan {
+		grid-template-rows: 8% 18% 30% 25%;
+		.instructions{
+			font-size: 150%;
+			margin-bottom: 10%;
+		}
+		img{
+			width: 25%;
+			margin: 0 20%;
+		}
+	}
+	.whyveg{
+		grid-template-rows: 4% 1% 8% 1.5% 3% 1%;
+		margin-bottom: 25%;
 	}
 }
