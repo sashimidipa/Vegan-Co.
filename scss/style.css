@@ -170,12 +170,12 @@ a {
 .boxlyout {
   display: grid;
   grid-template-columns: 49.5% 49.5%;
-  grid-template-rows: 50% 28% 28% 28% 28%;
+  grid-template-rows: 48.5% 28% 28% 28% 28%;
   -moz-column-gap: 0.5%;
        column-gap: 0.5%;
   row-gap: 0.5%;
   flex-wrap: wrap;
-  margin: 0 0 150% 0;
+  margin: 0 0 135% 0;
   color: #DBFDF1;
   background: #DBFDF1;
   overflow: visible;
@@ -668,6 +668,7 @@ h1 {
   }
   .boxlyout {
     grid-template-rows: 52% 30% 30% 30% 30%;
+    margin-bottom: 143%;
   }
   .recipe_colection .text {
     margin: 77% 0 0 0;
@@ -722,7 +723,7 @@ h1 {
 @media only screen and (min-width: 600px) {
   .boxlyout {
     grid-template-rows: 54% 30% 30% 30% 30%;
-    margin: 0 0 10% 0;
+    margin-bottom: 145%;
   }
   .recipe_colection .text {
     margin: 77% 0 0 0;
@@ -755,6 +756,7 @@ h1 {
   .boxlyout {
     grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
     grid-template-rows: 34% 34% 34%;
+    margin-bottom: 5%;
   }
   .challenge_panel {
     grid-column-start: 1;
@@ -850,7 +852,8 @@ h1 {
   }
   .boxlyout {
     grid-template-columns: 17% 17% 17% 17% 30%;
-    grid-template-rows: 45% 45% 45%;
+    grid-template-rows: 47% 47%;
+    margin-bottom: 0.1%;
   }
   .recipe_colection .text {
     margin: 69% 0.3% 0 0.3%;
@@ -936,8 +939,9 @@ h1 {
     display: block;
   }
   .boxlyout {
-    grid-template-columns: 17% 17% 17% 17% 30%;
-    grid-template-rows: 55% 55% 55%;
+    grid-template-columns: 17% 17% 16.8% 17% 30%;
+    grid-template-rows: 50%;
+    margin-bottom: 0.5%;
   }
   .recipe_colection .text {
     margin: 69% 0.3% 0 0.3%;
